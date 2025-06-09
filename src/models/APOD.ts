@@ -1,8 +1,8 @@
 export interface APOD {
-    date: Date;
+    date: string;
     explanation: string;
     hdurl: string;
-    media_type: "image" | "video";
+    media_type: string;
     title: string;
     url: string;
 }

@@ -38,7 +38,7 @@ const useFetch = <Type,>(url: string) => {
         };
     }, [url]);
 
-    return { data, loading, error };
+    return {data, loading, error};
 };
 
 export default useFetch;
