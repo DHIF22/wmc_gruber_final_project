@@ -9,7 +9,7 @@ A React web application that displays live data from NASA's public APIs, includi
 This project was built to explore space-related data from NASA’s public APIs and present it in a user-friendly, interactive format. It features:
 
 - Display NASA's **Astronomy Picture of the Day (APOD)**
-- A list of **Near-Earth Objects (NEOs)** with optional filtering for hazardous asteroids
+- A list of **Near-Earth Objects (NEOs)** with filtering for hazardous asteroids
 - Responsive design
 
 ---
