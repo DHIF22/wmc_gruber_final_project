@@ -1,0 +1,61 @@
+.neo-card {
+    background-color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.neo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.neo-title {
+    font-size: clamp(1.25rem, 2vw, 1.75rem);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #bed3ff;
+}
+
+.neo-data {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    color: #5b6470;
+    margin-bottom: 0.25rem;
+}
+
+.neo-label {
+    font-weight: 500;
+    color: #8b9ba6;
+}
+
+.neo-hazard {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.neo-safe {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+.neo-footer {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #6c757d;
+    text-align: right;
+}
+
+/* Responsive layout control */
+@media (max-width: 576px) {
+    .neo-card {
+        padding: 1rem;
+    }
+}

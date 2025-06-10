@@ -1,0 +1,16 @@
+.neo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 4.5rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 1rem;
+}
+
+.container {
+    width: 80%;
+}
+
+
+
