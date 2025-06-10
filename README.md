@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# NASA Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React web application that displays live data from NASA's public APIs, including the **Astronomy Picture of the Day (APOD)** and **Near-Earth Objects (NEO)**. The project uses real-time API fetching and responsive card-based design to explore space phenomena interactively.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Idea
 
-## Expanding the ESLint configuration
+This project was built to explore space-related data from NASA’s public APIs and present it in a user-friendly, interactive format. It features:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Display NASA's **Astronomy Picture of the Day (APOD)**
+- A list of **Near-Earth Objects (NEOs)** with filtering for hazardous asteroids
+- Responsive design
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## How to Run Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository**
+2. **Install dependencies**
+   - npm install
+3. **Run the npm.dev server**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## Technologies Used
+* React (TypeScript)
+* Custom Hooks (useFetch, useToggle)
+* NASA APIs:
+  * APOD API
+  * NEO Feed API
+* Responsive CSS with Flexbox and Grid
+* Mock data backups for development without network/API
+* template designs from uiverse.io
+
+---
+
+## Challenges & Ideas
+### Challenges:
+* Parsing the nested NEO API response
+* Making the card layout fully responsive and scrollable
+* Ensuring that the mock data loads properly when API fails
+
+### Future Enhancements:
+* Add a date picker for APOD and NEO ranges
+* Expand NEO filtering
